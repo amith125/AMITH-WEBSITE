@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f1f1f1;
+      }
+
+      .container {
+        padding: 16px;
+        background-color: rgb(9, 243, 146);
+        margin-top: 50px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #00e908;
+        color: rgb(19, 18, 18);
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        background-color: #f80000;
+      }
+
+      .cancelbtn {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: auto;
+      }
+
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+      }
+
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+        viewport-fit: auto;
+      }
+
+      .container form {
+        border-radius: 5px;
+        padding: 20px;
+      }
+
+      @media screen and (max-width: 500px) {
+        .container {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Login Form</h2>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="imgcontainer">
+          <img
+            src="https://www.w3schools.com/howto/img_avatar2.png"
+            alt="Avatar"
+            class="avatar"
+          />
+        </div>
+
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required />
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button
+          type="button"
+          value="onclick"
+          onclick="window.location.href = 'index.html'"
+        >
+          Login
+        </button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+      </form>
+    </div>
+  </body>
+</html>
